@@ -17,22 +17,22 @@ export default function Home() {
         <p className="text-2xl md:text-3xl text-muted-foreground mb-4">
           Gen AI Developer and Enthusiast
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-6">
           <Button variant="ghost" size="icon" asChild>
             <Link href="https://github.com/AjayK47" target="_blank">
-              <Github className="h-5 w-5" />
+              <Github className="h-8 w-8" />
               <span className="sr-only">GitHub</span>
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
             <Link href="https://www.linkedin.com/in/ajay-kommineni-1b3985224/" target="_blank">
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-8 w-8" />
               <span className="sr-only">LinkedIn</span>
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
             <Link href="mailto:ajaykommineni@yahoo.com">
-              <Mail className="h-5 w-5" />
+              <Mail className="h-8 w-8" />
               <span className="sr-only">Email</span>
             </Link>
           </Button>
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section id="about" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">01.</span> About Me
         </h2>
@@ -52,40 +52,40 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section id="experience" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">02.</span> Experience
         </h2>
         <div className="relative border-l border-muted pl-8 ml-4">
           {[
             {
-              title: "Software Engineer",
-              company: "Tech Innovators Inc.",
-              date: "2020 — Present",
+              title: "AI/ML Engineer Intern",
+              company: "Truviz AI",
+              date: "2024 October — Present",
               description: [
-                "Led development of key features resulting in 30% increase in user engagement",
-                "Implemented machine learning algorithms for data analysis",
-                "Mentored junior developers and conducted code reviews"
+                "Building End to End AI Agentic based Hiring Platform",
+                "Working on Job search for Job seekers using AI agents",
+                "Implementing advanced ML algorithms for candidate matching"
               ]
             },
             {
-              title: "Junior Developer",
-              company: "StartUp Solutions",
-              date: "2018 — 2020",
+              title: "Undergraduate Research Fellow",
+              company: "AIR CENTER VITAP",
+              date: "2024 April - Present",
               description: [
-                "Developed and maintained web applications using React and Node.js",
-                "Collaborated with cross-functional teams to deliver projects on time",
-                "Improved application performance by 40% through code optimization"
+                "Worked on development of India's own Legal Domain LLM models",
+                "Conducted research on Video Generation technologies",
+                "Contributing to cutting-edge AI research projects"
               ]
             },
             {
-              title: "Research Assistant",
-              company: "University Tech Lab",
-              date: "2016 — 2018",
+              title: "ML Project Intern",
+              company: "InTrain Tech",
+              date: "2023 October - 2023 December",
               description: [
-                "Assisted in machine learning research projects",
-                "Published 2 papers in international conferences",
-                "Developed data visualization tools for research findings"
+                "Developed a real-estate price prediction model using ML regression techniques",
+                "Built an NLP Assistant chatbot for an Edu-tech company to handle website visitor queries",
+                "Implemented and deployed machine learning solutions for production use"
               ]
             }
           ].map((job, index) => (
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section id="education" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">03.</span> Education
         </h2>
@@ -117,7 +117,6 @@ export default function Home() {
               <h3 className="text-2xl font-semibold">BTech in Computer Science and Engineering</h3>
               <p className="text-muted-foreground">VIT AP University</p>
               <p className="text-sm text-muted-foreground">2021 — 2025</p>
-              <p className="text-sm text-muted-foreground">CGPA: 8.73/10</p>
               <p className="text-muted-foreground">Specialization: AI and ML</p>
             </CardContent>
           </Card>
@@ -125,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section id="projects" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">04.</span> Projects
         </h2>
@@ -138,22 +137,52 @@ export default function Home() {
               github: "https://github.com/AjayK47/PagePod"
             },
             {
-              title: "Stock Insight Agentic Framework",
-              description: "Multi-agent system that uses LLM's to analyze financial data, review market news, and predict company stock performance using autogen library.",
+              title: "Stock Insight Agentic Framework with Autogen",
+              description: "This is a multi-agent system that uses LLM's to analyze financial data, review market news, and predict company stock performance. Built with the autogen library, it coordinates multiple agents, each assigned a specific role in processing financial information and making predictions",
               technologies: ["Python", "Autogen", "LLMs", "Financial APIs"],
               github: "https://github.com/AjayK47/Stock-Insight-Agent"
             },
             {
-              title: "AI Voice Over and Script Generator",
-              description: "Streamlit application that uses various LLM models to generate YouTube scripts and voiceovers.",
+              title: "AI Voice Over and Script Generator for Youtube",
+              description: "This project is a Streamlit application that uses various LLM models to generate YouTube scripts and voiceovers. It aims to assist content creators in producing high-quality YouTube videos with minimal effort.",
               technologies: ["Python", "Streamlit", "LLMs", "TTS"],
               github: "https://github.com/AjayK47/AI-Youtube-Voice-Over-and-Script-Generator"
             },
             {
               title: "Gemma Model Finetuning Using Lora",
-              description: "Finetuned Google's Open source Gemma 2b model on Indian history domain using Lora technique.",
+              description: "Finetuned Google's Open source Gemma 2b model on Indian history domain using Lora technique , huggingface transformers library",
               technologies: ["Python", "PyTorch", "Transformers", "LoRA"],
               github: "https://github.com/AjayK47/Gemma-Model-Finetuning-Using-Lora"
+            },
+            {
+              title: "Web Page ChatBot using Llama index",
+              description: "Web Page Q&A Chatbot is a Streamlit web application designed to interactively answer questions based on web page data. The chatbot uses LLMS such as Hugging Face, Gemini or OpenAI to provide accurate and context-aware responses.",
+              technologies: ["Python", "Streamlit", "LlamaIndex", "LLMs"],
+              github: "https://github.com/AjayK47/Web-ChatBot-using-Llama-index"
+            },
+            {
+              title: "Gemini-File with Llama-Index",
+              description: "Gemini-File is a Streamlit web application that allows users to upload PDF files, index their contents using the Gemini search engine from the Llama-Index library, and query the documents.",
+              technologies: ["Python", "Streamlit", "LlamaIndex", "Gemini"],
+              github: "https://github.com/AjayK47/Gemini-File"
+            },
+            {
+              title: "Face Emotion Detection using CNN",
+              description: "A project involving training a Convolutional Neural Network (CNN) for facial expression recognition.",
+              technologies: ["Python", "CNN", "Deep Learning", "Computer Vision"],
+              github: "https://github.com/AjayK47/Face-Emotion-Detection_CNN"
+            },
+            {
+              title: "Boston Housing Price Prediction",
+              description: "A machine learning project for predicting median housing costs in different areas of Boston.",
+              technologies: ["Python", "ML", "Regression", "Data Analysis"],
+              github: "https://github.com/AjayK47/Boston-Hosuing-Prediction-and-Deployment-"
+            },
+            {
+              title: "Fruits/Veggies Classification with InceptionV3",
+              description: "A project that uses a fine tuned InceptionV3 model to identify vegetables or fruits in uploaded images also provide nutrition info using Google PaLM API",
+              technologies: ["Python", "InceptionV3", "Google PaLM", "Computer Vision"],
+              github: "https://github.com/AjayK47/image-classification-with-inceptioV3-and-Google-Palm"
             }
           ].map((project, index) => (
             <Card key={index}>
@@ -181,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* Publications Section */}
-      <section id="publications" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section id="publications" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">05.</span> Publications
         </h2>
@@ -217,7 +246,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section id="contact" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">06.</span> Contact
         </h2>
