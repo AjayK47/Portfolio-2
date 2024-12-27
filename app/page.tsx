@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
-import { Navigation } from '@/components/navigation'
+import { Navigation } from './components/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
@@ -10,28 +10,28 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-4">
+      <section className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-2">
           Ajay Kommineni
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-          Software Engineer & Researcher
+        <p className="text-2xl md:text-3xl text-muted-foreground mb-4">
+          Gen AI Developer and Enthusiast
         </p>
         <div className="flex gap-4">
           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://github.com/yourusername" target="_blank">
+            <Link href="https://github.com/AjayK47" target="_blank">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://linkedin.com/in/yourusername" target="_blank">
+            <Link href="https://www.linkedin.com/in/ajay-kommineni-1b3985224/" target="_blank">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="mailto:your.email@example.com">
+            <Link href="mailto:ajaykommineni@yahoo.com">
               <Mail className="h-5 w-5" />
               <span className="sr-only">Email</span>
             </Link>
@@ -40,20 +40,20 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+      <section id="about" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">01.</span> About Me
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          I am a passionate software engineer with expertise in full-stack development and machine learning. 
-          Currently pursuing my Ph.D., I focus on developing innovative solutions that bridge the gap between 
-          theoretical research and practical applications.
+        <p className="text-xl text-muted-foreground leading-relaxed">
+          Final-year Computer Science and Engineering student at Vellore Institute of Technology, AP. 
+          Passionate about Deep Learning, AI trends, and building large language models (LLMs). 
+          My interests extend beyond tech into space exploration and aviation.
         </p>
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+      <section id="experience" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">02.</span> Experience
         </h2>
         <div className="relative border-l border-muted pl-8 ml-4">
@@ -89,10 +89,10 @@ export default function Home() {
               ]
             }
           ].map((job, index) => (
-            <Card key={index} className="mb-8 relative">
+            <Card key={index} className="mb-6 relative">
               <div className="absolute -left-10 top-5 w-4 h-4 bg-primary rounded-full" />
               <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold">{job.title}</h3>
+                <h3 className="text-2xl font-semibold">{job.title}</h3>
                 <p className="text-muted-foreground">{job.company}</p>
                 <p className="text-sm text-muted-foreground mb-4">{job.date}</p>
                 <ul className="list-disc list-inside text-muted-foreground">
@@ -107,71 +107,59 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+      <section id="education" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">03.</span> Education
         </h2>
-        <div className="space-y-8">
+        <div className="space-y-6">
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold">Ph.D. in Computer Science</h3>
-              <p className="text-muted-foreground">Stanford University</p>
-              <p className="text-sm text-muted-foreground">2020 — Present</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold">M.S. in Computer Science</h3>
-              <p className="text-muted-foreground">MIT</p>
-              <p className="text-sm text-muted-foreground">2018 — 2020</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold">B.S. in Computer Science</h3>
-              <p className="text-muted-foreground">UC Berkeley</p>
-              <p className="text-sm text-muted-foreground">2014 — 2018</p>
+              <h3 className="text-2xl font-semibold">BTech in Computer Science and Engineering</h3>
+              <p className="text-muted-foreground">VIT AP University</p>
+              <p className="text-sm text-muted-foreground">2021 — 2025</p>
+              <p className="text-sm text-muted-foreground">CGPA: 8.73/10</p>
+              <p className="text-muted-foreground">Specialization: AI and ML</p>
             </CardContent>
           </Card>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+      <section id="projects" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">04.</span> Projects
         </h2>
         <div className="grid gap-6 md:grid-cols-2">
           {[
             {
-              title: "AI-Powered Chat Bot",
-              description: "Developed a chat bot using GPT-3 for customer support automation.",
-              technologies: ["Python", "Flask", "OpenAI API", "React"],
-              github: "https://github.com/yourusername/chatbot"
+              title: "PagePod - Multi-Agent Web content Podcast generator",
+              description: "This project uses a multi-agent framework to automatically generate podcasts from website content. It leverages the power of AI to scrape web content, refine it, create a script, and convert it to speech.",
+              technologies: ["Python", "LangChain", "Autogen", "GPT-4"],
+              github: "https://github.com/AjayK47/PagePod"
             },
             {
-              title: "Blockchain Voting System",
-              description: "Created a secure and transparent voting system using blockchain technology.",
-              technologies: ["Solidity", "Ethereum", "Web3.js", "Node.js"],
-              github: "https://github.com/yourusername/blockchain-voting"
+              title: "Stock Insight Agentic Framework",
+              description: "Multi-agent system that uses LLM's to analyze financial data, review market news, and predict company stock performance using autogen library.",
+              technologies: ["Python", "Autogen", "LLMs", "Financial APIs"],
+              github: "https://github.com/AjayK47/Stock-Insight-Agent"
             },
             {
-              title: "Real-time Data Visualization Dashboard",
-              description: "Built a dashboard for visualizing large-scale data in real-time.",
-              technologies: ["D3.js", "React", "Node.js", "WebSocket"],
-              github: "https://github.com/yourusername/data-viz"
+              title: "AI Voice Over and Script Generator",
+              description: "Streamlit application that uses various LLM models to generate YouTube scripts and voiceovers.",
+              technologies: ["Python", "Streamlit", "LLMs", "TTS"],
+              github: "https://github.com/AjayK47/AI-Youtube-Voice-Over-and-Script-Generator"
             },
             {
-              title: "Mobile Fitness Tracking App",
-              description: "Developed a cross-platform mobile app for fitness tracking and goal setting.",
-              technologies: ["React Native", "Firebase", "Redux", "Google Fit API"],
-              github: "https://github.com/yourusername/fitness-app"
+              title: "Gemma Model Finetuning Using Lora",
+              description: "Finetuned Google's Open source Gemma 2b model on Indian history domain using Lora technique.",
+              technologies: ["Python", "PyTorch", "Transformers", "LoRA"],
+              github: "https://github.com/AjayK47/Gemma-Model-Finetuning-Using-Lora"
             }
           ].map((project, index) => (
             <Card key={index}>
               <CardContent className="pt-6">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <h3 className="text-2xl font-semibold">{project.title}</h3>
                   <Link 
                     href={project.github}
                     target="_blank"
@@ -193,29 +181,23 @@ export default function Home() {
       </section>
 
       {/* Publications Section */}
-      <section id="publications" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+      <section id="publications" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">05.</span> Publications
         </h2>
         <div className="space-y-6">
           {[
             {
-              title: "Advances in Neural Network Architectures for Image Recognition",
-              journal: "Journal of Artificial Intelligence",
-              year: 2022,
-              link: "#"
+              title: "Multimodal Approach to Emotion Recognition using Deep Learning",
+              conference: "ICIMIA (International Conference on Intelligent Machines, Innovation and Automation)",
+              year: 2023,
+              link: "https://ieeexplore.ieee.org/document/10426592"
             },
             {
-              title: "Efficient Algorithms for Large-Scale Data Processing in IoT Networks",
-              conference: "International Conference on Distributed Computing Systems",
-              year: 2021,
-              link: "#"
-            },
-            {
-              title: "A Novel Approach to Privacy-Preserving Machine Learning",
-              journal: "IEEE Transactions on Information Forensics and Security",
-              year: 2020,
-              link: "#"
+              title: "Paddy Crop Disease Detection using LeNet and MobileNet Models",
+              conference: "INDIACom 2024",
+              year: 2024,
+              link: "https://ieeexplore.ieee.org/document/10498510"
             }
           ].map((publication, index) => (
             <Card key={index}>
@@ -226,7 +208,7 @@ export default function Home() {
                   </Link>
                 </h3>
                 <p className="text-muted-foreground">
-                  {publication.journal || publication.conference}, {publication.year}
+                  {publication.conference}, {publication.year}
                 </p>
               </CardContent>
             </Card>
@@ -235,8 +217,8 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
+      <section id="contact" className="py-8 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">06.</span> Contact
         </h2>
         <div className="rounded-lg border border-border bg-card p-6">
@@ -245,14 +227,14 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
             <Link 
-              href="mailto:your.email@example.com"
+              href="mailto:ajaykommineni@yahoo.com"
               className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
               Email Me
             </Link>
             <Link 
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/ajay-kommineni-1b3985224/"
               className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
               target="_blank"
             >
@@ -265,4 +247,3 @@ export default function Home() {
     </div>
   )
 }
-
