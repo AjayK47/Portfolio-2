@@ -108,16 +108,18 @@ export default function Home() {
 
       {/* Education Section */}
       <section id="education" className="py-16 px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
+        <h2 className="text-3xl font-semibold mb-6 flex items-center gap-2"> {/* Increased margin-bottom */}
           <span className="text-muted-foreground">03.</span> Education
         </h2>
-        <div className="space-y-6">
+        <div className="space-y-8"> {/* Increased space between cards */}
           <Card>
-            <CardContent className="pt-6">
-              <h3 className="text-2xl font-semibold">BTech in Computer Science and Engineering</h3>
-              <p className="text-muted-foreground">VIT AP University</p>
-              <p className="text-sm text-muted-foreground">2021 — 2025</p>
-              <p className="text-muted-foreground">Specialization: AI and ML</p>
+            <CardContent className="pt-8 p-6 md:p-8"> {/* Increased padding */}
+              <h3 className="text-2xl md:text-3xl font-semibold mb-4">BTech in Computer Science and Engineering</h3>
+              <div className="space-y-3"> {/* Added spacing between details */}
+                <p className="text-lg text-muted-foreground">VIT AP University</p>
+                <p className="text-base text-muted-foreground">2021 — 2025</p>
+                <p className="text-lg text-muted-foreground">Specialization: AI and ML</p>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -128,7 +130,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-4 flex items-center gap-2">
           <span className="text-muted-foreground">04.</span> Projects
         </h2>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2"> {/* Increased gap from 6 to 8 */}
           {[
             {
               title: "PagePod - Multi-Agent Web content Podcast generator",
@@ -185,22 +187,28 @@ export default function Home() {
               github: "https://github.com/AjayK47/image-classification-with-inceptioV3-and-Google-Palm"
             }
           ].map((project, index) => (
-            <Card key={index}>
-              <CardContent className="pt-6">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-2xl font-semibold">{project.title}</h3>
+            <Card key={index} className="overflow-hidden"> {/* Added overflow-hidden */}
+              <CardContent className="pt-8 p-6 md:p-8"> {/* Increased padding */}
+                <div className="flex justify-between items-start mb-4"> {/* Increased margin-bottom */}
+                  <h3 className="text-xl md:text-2xl font-semibold pr-8"> {/* Added padding-right */}
+                    {project.title}
+                  </h3>
                   <Link 
                     href={project.github}
                     target="_blank"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0"
                   >
-                    <Github className="h-5 w-5" />
+                    <Github className="h-6 w-6 md:h-7 md:w-7" /> {/* Increased icon size */}
                   </Link>
                 </div>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="text-muted-foreground mb-6 text-base md:text-lg"> {/* Increased text size and margin */}
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-3"> {/* Increased gap */}
                   {project.technologies.map((tech, i) => (
-                    <span key={i} className="text-xs bg-muted px-2 py-1 rounded">{tech}</span>
+                    <span key={i} className="text-sm bg-muted px-3 py-1.5 rounded"> {/* Increased text size and padding */}
+                      {tech}
+                    </span>
                   ))}
                 </div>
               </CardContent>
