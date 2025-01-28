@@ -4,8 +4,6 @@ import { Navigation } from './components/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
-export const runtime = "edge";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
