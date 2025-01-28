@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,      // Enables React strict mode for better development
-  output: 'export',           // Generates static HTML export in 'out' directory
+  reactStrictMode: true,
+  output: 'export',
   images: {
-    unoptimized: true,        // Required for static exports with Next.js images
+    unoptimized: true,
+  },
+  // Add this to handle browser APIs during build
+  experimental: {
+    runtime: 'edge'
   }
 }
 
