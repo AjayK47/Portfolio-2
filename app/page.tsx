@@ -61,9 +61,19 @@ export default function Home() {
         <div className="relative border-l border-muted pl-8 ml-4">
           {[
             {
+              title: "AI/ML Engineer",
+              company: "Truviz AI",
+              date: "2025 January — Present",
+              description: [
+                "Building End to End AI Agentic based Hiring Platform",
+                "Working on Job search for Job seekers using AI agents",
+                "Implementing advanced ML algorithms for candidate matching"
+              ]
+            },
+            {
               title: "AI/ML Engineer Intern",
               company: "Truviz AI",
-              date: "2024 October — Present",
+              date: "2024 October - 2024 December",
               description: [
                 "Building End to End AI Agentic based Hiring Platform",
                 "Working on Job search for Job seekers using AI agents",
@@ -73,7 +83,7 @@ export default function Home() {
             {
               title: "Undergraduate Research Fellow",
               company: "AIR CENTER VITAP",
-              date: "2024 April - Present",
+              date: "2024 April - 2025 January",
               description: [
                 "Worked on development of India's own Legal Domain LLM models",
                 "Conducted research on Video Generation technologies",
