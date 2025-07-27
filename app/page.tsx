@@ -45,9 +45,10 @@ export default function Home() {
           <span className="text-muted-foreground">01.</span> About Me
         </h2>
         <p className="text-xl text-muted-foreground leading-relaxed">
-          Final-year Computer Science and Engineering student at Vellore Institute of Technology, AP. 
-          Passionate about Deep Learning, AI trends, and building large language models (LLMs). 
-          My interests extend beyond tech into space exploration and aviation.
+          AI/ML Engineer at Truviz AI, building Al-driven products with expertise in fine-tuning, retrieval-augmented generation (RAG), and agentic frameworks. Experienced in NLP, predictive analytics, and Al automation. Developed projects like PagePod (Al podcast generator) and Stock Insight (financial market analysis tool).
+        </p>
+        <p className="text-xl text-muted-foreground leading-relaxed mt-4">
+          I have worked on LLM research in Indian law, contributing to public-domain models that enhance legal Al applications.
         </p>
       </section>
 
@@ -61,7 +62,7 @@ export default function Home() {
             {
               title: "AI/ML Engineer",
               company: "Truviz AI",
-              date: "2025 January — Present",
+              date: "2025 January - Present",
               description: [
                 "Building End to End AI Agentic based Hiring Platform",
                 "Working on Job search for Job seekers using AI agents",
