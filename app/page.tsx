@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className="text-lg leading-relaxed font-normal opacity-90 text-justify">
           <p>
-            I am working at Truviz AI, as an AI/ML Engineer currently building AI employee for the Enterprise. 
+            I am working at Trugen AI, as an AI/ML Engineer currently building AI employee for the Enterprise. 
             Prior to this, I designed and developed end-to-end AI agents for hireid product to streamline 
             and optimize the hiring process. In my free time, I explore research in diffusion-based 
             language models and also addressing memory and context bloat in AI agents.
@@ -66,7 +66,7 @@ export default function Home() {
                   </div>
                   <ul className="leading-relaxed opacity-90 text-base space-y-2 list-none">
                     <li>{">"} Working on tool-calling and third-party meeting integrations for autonomous Video Agents.</li>
-                    <li>{">"} Currently building an 'AI Employee' designed to execute enterprise-level workflows.</li>
+                    <li>{">"} Currently building an 'AI Employee' designed to work like a human co-worker in Enterprises</li>
                   </ul>
                 </div>
               </div>
