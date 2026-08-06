@@ -10,16 +10,18 @@ export default function Home() {
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-heading">&gt; Ajay Kommineni</h1>
           <p className="text-xl md:text-2xl font-heading leading-relaxed">
-            Engineer specializing in the architecture of autonomous enterprise agents.
+            AI/ML Engineer building agent harnesses and AI co-workers for the enterprise.
           </p>
         </div>
 
         <div className="text-lg leading-relaxed font-normal opacity-90 text-justify">
           <p>
-            I am working at Trugen AI, as an AI/ML Engineer currently building AI employee for the Enterprise. 
-            Prior to this, I designed and developed end-to-end AI agents for hireid product to streamline 
-            and optimize the hiring process. In my free time, I explore research in diffusion-based 
-            language models and also addressing memory and context bloat in AI agents.
+            I work at Truviz AI as an AI/ML Engineer, currently owning the agent harness end-to-end for
+            our AI co-worker, built from scratch and running across two of our products. Prior to this,
+            I built the AI workflow behind an AI SDR product, and before that I worked on HireID, building
+            an end-to-end hiring pipeline &mdash; embedding-based candidate search, resume-to-JD matching and
+            scoring, and agents that do deep research on candidates. In my free time, I explore research in
+            diffusion-based language models and work on addressing memory and context bloat in AI agents.
           </p>
         </div>
 
@@ -48,40 +50,50 @@ export default function Home() {
           {/* Truviz Collective Timeline */}
           <div className="space-y-12">
             <div className="flex items-center gap-4 border-b border-[#00ff41]/30 pb-4">
-              <h4 className="text-2xl font-bold font-heading tracking-widest uppercase">Truviz</h4>
+              <h4 className="text-2xl font-bold font-heading tracking-widest uppercase">Truviz AI</h4>
               <p className="text-sm font-heading uppercase tracking-widest opacity-70">
-                1 yr 6 mos <span className="opacity-100 ml-2">[PARENT_ORGANISATION]</span>
+                1 yr 7 mos <span className="opacity-100 ml-2">[Parent company of HireID &amp; Trugen]</span>
               </p>
             </div>
-            
+
             <div className="relative border-l border-[#00ff41]/30 ml-2 space-y-12">
-              
+
               {/* Trugen AI (Full-time) */}
               <div className="relative pl-8 md:pl-10">
                 <div className="absolute -left-[4.5px] top-2 h-2 w-2 bg-[#00ff41] shadow-[0_0_10px_rgba(0,255,65,0.8)]"></div>
                 <div className="space-y-4">
                   <div className="space-y-1">
                     <p className="text-xl font-bold font-heading">Trugen AI · AI/ML Engineer</p>
-                    <p className="text-xs uppercase tracking-widest opacity-70">Full-time · Jan 2025 – Present</p>
+                    <p className="text-xs uppercase tracking-widest opacity-70">Full-time · Nov 2025 – Present</p>
                   </div>
                   <ul className="leading-relaxed opacity-90 text-base space-y-2 list-none">
-                    <li>{">"} Working on tool-calling and third-party meeting integrations for autonomous Video Agents.</li>
-                    <li>{">"} Currently building an 'AI Employee' designed to work like a human co-worker in Enterprises</li>
+                    <li>
+                      {">"} Own the agent harness end-to-end for Trugen&apos;s AI co-worker, built from scratch and
+                      currently powering{" "}
+                      <Link href="https://clarasdr.ai/" target="_blank" className="underline underline-offset-2 hover:bg-[#00ff41] hover:text-black">ClaraSDR</Link>
+                      {" "}and{" "}
+                      <Link href="https://juno-ai.app/" target="_blank" className="underline underline-offset-2 hover:bg-[#00ff41] hover:text-black">Juno AI</Link>.
+                    </li>
+                    <li>{">"} Previously built the AI workflow behind an AI SDR product.</li>
                   </ul>
                 </div>
               </div>
 
               {/* HireID.ai (Full-time) */}
               <div className="relative pl-8 md:pl-10">
-                <div className="absolute -left-[4.5px] top-2 h-2 w-2 bg-[#00ff41] shadow-[0_0_10px_rgba(0,255,65,0.8)]"></div>
+                <div className="absolute -left-[4.5px] top-2 h-2 w-2 bg-[transparent] border border-[#00ff41]"></div>
                 <div className="space-y-4">
                   <div className="space-y-1">
-                    <p className="text-xl font-bold font-heading">Hireid AI · AI/ML Engineer</p>
-                    <p className="text-xs uppercase tracking-widest opacity-70">Full-time · Jan 2025 – Present</p>
+                    <p className="text-xl font-bold font-heading">
+                      <Link href="https://hireid.ai/" target="_blank" className="hover:bg-[#00ff41] hover:text-black hover:px-2 transition-all">HireID AI</Link>
+                      {" "}· AI/ML Engineer
+                    </p>
+                    <p className="text-xs uppercase tracking-widest opacity-70">Full-time · Jan 2025 – Nov 2025</p>
                   </div>
                   <ul className="leading-relaxed opacity-90 text-base space-y-2 list-none">
-                    <li>{">"} Developed an end-to-end AI-driven hiring pipeline to streamline the recruitment process.</li>
-                    <li>{">"} Engineered a multi-agent workflow for deep candidate profile research and matching.</li>
+                    <li>{">"} Built AI-powered people search over candidate profiles using embeddings.</li>
+                    <li>{">"} Built an end-to-end hiring pipeline: parsing resumes, matching them against JDs, and scoring candidates via embeddings.</li>
+                    <li>{">"} Built agents that run deep research on candidates&apos; GitHub and research profiles.</li>
                   </ul>
                 </div>
               </div>
@@ -126,12 +138,12 @@ export default function Home() {
         </h3>
         <div className="space-y-10">
           {[
+            { title: "Forechain", link: "https://github.com/AjayK47/forechain", desc: "Self-hosted supplier-risk intelligence platform. A durable agent harness bootstraps each supplier, monitors them continuously in the background, and surfaces evidence-cited risk signals across six risk dimensions — every run's reasoning trace and sources are replayable on disk." },
             { title: "PagePod", link: "https://github.com/AjayK47/PagePod", desc: "Multi-agent framework for generating podcasts from web content." },
             { title: "Stock Insight", link: "https://github.com/AjayK47/Stock-Insight-Agent", desc: "Collaborative agent system for market analysis and prediction." },
             { title: "AI Voice Over and Script Generator", link: "https://github.com/AjayK47/AI-Voice-Over-and-Script-Generator-for-Youtube", desc: "Streamlit application using LLM models to generate YouTube scripts and voiceovers." },
             { title: "Gemma Research", link: "https://github.com/AjayK47/Gemma-Model-Finetuning-Using-Lora", desc: "Domain adaptation of Gemma 2B for Indian history using LoRA." },
             { title: "Llama Navigator", link: "https://github.com/AjayK47/Web-ChatBot-using-Llama-index", desc: "Interactive web explorer using RAG for contextual question-answering." },
-            { title: "Gemini-File", link: "https://github.com/AjayK47/Gemini-File", desc: "Streamlit web application to index and query PDF files using Gemini and Llama-Index." },
           ].map((proj, i) => (
             <div key={i} className="space-y-2 group">
               <Link href={proj.link} target="_blank" className="text-xl font-bold font-heading hover:bg-[#00ff41] hover:text-black hover:px-2 transition-all flex items-center gap-2 w-fit">
