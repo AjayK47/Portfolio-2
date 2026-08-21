@@ -131,6 +131,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Builds */}
+      <section className="space-y-12">
+        <h3 className="text-lg font-heading tracking-widest uppercase opacity-70 border-b border-[#00ff41]/30 w-fit pb-1">
+          _Builds
+        </h3>
+        <div className="space-y-10">
+          {[
+            { title: "Organic Hire", link: "https://organichire.co", desc: "An AI-first ATS for small teams — post jobs, let AI screen and rank resumes with reasoning you can actually read, and move candidates through a pipeline without paying for enterprise recruiting software." },
+            { title: "Open Session", link: "https://session.drawset.com", desc: "Open-source conference software that runs the whole show — CFP forms, submission review, speaker onboarding, drag-and-drop scheduling with conflict detection, and the public agenda." },
+          ].map((proj, i) => (
+            <div key={i} className="space-y-2 group">
+              <Link href={proj.link} target="_blank" className="text-xl font-bold font-heading hover:bg-[#00ff41] hover:text-black hover:px-2 transition-all flex items-center gap-2 w-fit">
+                {proj.title} <ArrowUpRight className="h-5 w-5" />
+              </Link>
+              <p className="text-base opacity-70 leading-relaxed">{proj.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Selected Works */}
       <section className="space-y-12">
         <h3 className="text-lg font-heading tracking-widest uppercase opacity-70 border-b border-[#00ff41]/30 w-fit pb-1">
@@ -138,7 +158,7 @@ export default function Home() {
         </h3>
         <div className="space-y-10">
           {[
-            { title: "Forechain", link: "https://github.com/AjayK47/forechain", desc: "Self-hosted supplier-risk intelligence platform. A durable agent harness bootstraps each supplier, monitors them continuously in the background, and surfaces evidence-cited risk signals across six risk dimensions — every run's reasoning trace and sources are replayable on disk." },
+            { title: "Forechain", link: "https://forechain.co", desc: "Self-hosted supplier-risk intelligence platform. A durable agent harness bootstraps each supplier, monitors them continuously in the background, and surfaces evidence-cited risk signals across six risk dimensions — every run's reasoning trace and sources are replayable on disk." },
             { title: "PagePod", link: "https://github.com/AjayK47/PagePod", desc: "Multi-agent framework for generating podcasts from web content." },
             { title: "Stock Insight", link: "https://github.com/AjayK47/Stock-Insight-Agent", desc: "Collaborative agent system for market analysis and prediction." },
             { title: "AI Voice Over and Script Generator", link: "https://github.com/AjayK47/AI-Voice-Over-and-Script-Generator-for-Youtube", desc: "Streamlit application using LLM models to generate YouTube scripts and voiceovers." },
