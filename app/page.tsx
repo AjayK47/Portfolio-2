@@ -10,18 +10,16 @@ export default function Home() {
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-heading">&gt; Ajay Kommineni</h1>
           <p className="text-xl md:text-2xl font-heading leading-relaxed">
-            AI/ML Engineer building agent harnesses and AI co-workers for the enterprise.
+            AI/ML Engineer. Currently building the identity and messaging layer for agents to talk to each other.
           </p>
         </div>
 
         <div className="text-lg leading-relaxed font-normal opacity-90 text-justify">
           <p>
-            I work at Truviz AI as an AI/ML Engineer, currently owning the agent harness end-to-end for
-            our AI co-worker, built from scratch and running across two of our products. Prior to this,
-            I built the AI workflow behind an AI SDR product, and before that I worked on HireID, building
-            an end-to-end hiring pipeline &mdash; embedding-based candidate search, resume-to-JD matching and
-            scoring, and agents that do deep research on candidates. In my free time, I explore research in
-            diffusion-based language models and work on addressing memory and context bloat in AI agents.
+            I&apos;m an AI/ML engineer. Right now I&apos;m building the identity and messaging layer so AI agents
+            can talk to each other. Before this, I built agent harnesses and AI co-workers for enterprise,
+            hiring pipelines, and AI SDR workflows. In my free time, I explore diffusion-based language
+            models and work on fixing memory and context bloat in AI agents.
           </p>
         </div>
 
@@ -52,7 +50,7 @@ export default function Home() {
             <div className="flex items-center gap-4 border-b border-[#00ff41]/30 pb-4">
               <h4 className="text-2xl font-bold font-heading tracking-widest uppercase">Truviz AI</h4>
               <p className="text-sm font-heading uppercase tracking-widest opacity-70">
-                1 yr 7 mos <span className="opacity-100 ml-2">[Parent company of HireID &amp; Trugen]</span>
+                1 yr 11 mos <span className="opacity-100 ml-2">[Parent company of HireID &amp; Trugen]</span>
               </p>
             </div>
 
@@ -64,7 +62,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="space-y-1">
                     <p className="text-xl font-bold font-heading">Trugen AI · AI/ML Engineer</p>
-                    <p className="text-xs uppercase tracking-widest opacity-70">Full-time · Nov 2025 – Present</p>
+                    <p className="text-xs uppercase tracking-widest opacity-70">Full-time · Nov 2025 – Sep 2026</p>
                   </div>
                   <ul className="leading-relaxed opacity-90 text-base space-y-2 list-none">
                     <li>
@@ -131,10 +129,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Builds */}
+      {/* Current Builds */}
       <section className="space-y-12">
         <h3 className="text-lg font-heading tracking-widest uppercase opacity-70 border-b border-[#00ff41]/30 w-fit pb-1">
-          _Builds
+          _Current_Builds
+        </h3>
+        <div className="space-y-10">
+          {[
+            { title: "myagent.to", link: "https://myagent.to", desc: "A messaging network that gives every AI agent a permanent address so agents can talk to each other across different owners and runtimes. Messages are stored even when the receiving agent is offline." },
+            { title: "OnWatch", link: "https://onwatch.site", desc: "A social listening tool that scans the web for conversations about your product and competitors. AI filters every mention so you only see the ones worth your time." },
+          ].map((proj, i) => (
+            <div key={i} className="space-y-2 group">
+              <Link href={proj.link} target="_blank" className="text-xl font-bold font-heading hover:bg-[#00ff41] hover:text-black hover:px-2 transition-all flex items-center gap-2 w-fit">
+                {proj.title} <ArrowUpRight className="h-5 w-5" />
+              </Link>
+              <p className="text-base opacity-70 leading-relaxed">{proj.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Past Builds */}
+      <section className="space-y-12">
+        <h3 className="text-lg font-heading tracking-widest uppercase opacity-70 border-b border-[#00ff41]/30 w-fit pb-1">
+          _Past_Builds
         </h3>
         <div className="space-y-10">
           {[
@@ -175,8 +193,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Publications */}
-      <section className="space-y-12">
+      {/* Publications - hidden for now */}
+      <section className="hidden space-y-12">
         <h3 className="text-lg font-heading tracking-widest uppercase opacity-70 border-b border-[#00ff41]/30 w-fit pb-1">
           _Publications
         </h3>
