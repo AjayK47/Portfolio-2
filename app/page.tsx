@@ -47,10 +47,10 @@ export default function Home() {
           
           {/* Truviz Collective Timeline */}
           <div className="space-y-12">
-            <div className="flex items-center gap-4 border-b border-[#00ff41]/30 pb-4">
+            <div className="flex flex-col items-start gap-1 border-b border-[#00ff41]/30 pb-4 md:flex-row md:items-center md:gap-4">
               <h4 className="text-2xl font-bold font-heading">Truviz AI</h4>
-              <p className="text-sm font-heading uppercase tracking-widest opacity-70">
-                1 yr 11 mos <span className="opacity-100 ml-2">[Parent company of HireID &amp; Trugen]</span>
+              <p className="text-sm leading-relaxed opacity-70">
+                1 yr 11 mos <span className="ml-1">· Parent company of HireID &amp; Trugen</span>
               </p>
             </div>
 
