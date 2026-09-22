@@ -1,18 +1,6 @@
 import './globals.css'
-import { VT323, Space_Mono } from 'next/font/google'
+import '@fontsource-variable/manrope'
 import { ThemeProvider } from '@/components/theme-provider'
-
-const spaceMono = Space_Mono({ 
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  variable: '--font-space-mono',
-})
-
-const vt323 = VT323({ 
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-vt323',
-})
 
 export const metadata = {
   title: 'Ajay Kommineni - AI/ML Engineer',
@@ -26,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${spaceMono.variable} ${vt323.variable} font-mono antialiased bg-black text-[#00ff41]`}>
+      <body className="font-sans antialiased bg-white text-[#171614]">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
